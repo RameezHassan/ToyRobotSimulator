@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4664E4DD2507A4C8000590F3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664E4DC2507A4C8000590F3 /* main.swift */; };
+		46C664312517867300E214C4 /* ToyRobotSimulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C664302517867300E214C4 /* ToyRobotSimulatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +26,20 @@
 /* Begin PBXFileReference section */
 		4664E4D92507A4C8000590F3 /* ToyRobotSimulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ToyRobotSimulator; sourceTree = BUILT_PRODUCTS_DIR; };
 		4664E4DC2507A4C8000590F3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		46C6642E2517867300E214C4 /* ToyRobotSimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToyRobotSimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C664302517867300E214C4 /* ToyRobotSimulatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyRobotSimulatorTests.swift; sourceTree = "<group>"; };
+		46C664322517867300E214C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4664E4D62507A4C8000590F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C6642B2517867300E214C4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				4664E4DB2507A4C8000590F3 /* ToyRobotSimulator */,
+				46C6642F2517867300E214C4 /* ToyRobotSimulatorTests */,
 				4664E4DA2507A4C8000590F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				4664E4D92507A4C8000590F3 /* ToyRobotSimulator */,
+				46C6642E2517867300E214C4 /* ToyRobotSimulatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +75,15 @@
 			path = ToyRobotSimulator;
 			sourceTree = "<group>";
 		};
+		46C6642F2517867300E214C4 /* ToyRobotSimulatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				46C664302517867300E214C4 /* ToyRobotSimulatorTests.swift */,
+				46C664322517867300E214C4 /* Info.plist */,
+			);
+			path = ToyRobotSimulatorTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -72,6 +94,7 @@
 				4664E4D52507A4C8000590F3 /* Sources */,
 				4664E4D62507A4C8000590F3 /* Frameworks */,
 				4664E4D72507A4C8000590F3 /* CopyFiles */,
+				46A4610025164162003C53E8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -82,18 +105,38 @@
 			productReference = 4664E4D92507A4C8000590F3 /* ToyRobotSimulator */;
 			productType = "com.apple.product-type.tool";
 		};
+		46C6642D2517867300E214C4 /* ToyRobotSimulatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46C664352517867300E214C4 /* Build configuration list for PBXNativeTarget "ToyRobotSimulatorTests" */;
+			buildPhases = (
+				46C6642A2517867300E214C4 /* Sources */,
+				46C6642B2517867300E214C4 /* Frameworks */,
+				46C6642C2517867300E214C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToyRobotSimulatorTests;
+			productName = ToyRobotSimulatorTests;
+			productReference = 46C6642E2517867300E214C4 /* ToyRobotSimulatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		4664E4D12507A4C8000590F3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Rameez Hassan";
 				TargetAttributes = {
 					4664E4D82507A4C8000590F3 = {
 						CreatedOnToolsVersion = 11.7;
+					};
+					46C6642D2517867300E214C4 = {
+						CreatedOnToolsVersion = 12.0;
 					};
 				};
 			};
@@ -111,9 +154,40 @@
 			projectRoot = "";
 			targets = (
 				4664E4D82507A4C8000590F3 /* ToyRobotSimulator */,
+				46C6642D2517867300E214C4 /* ToyRobotSimulatorTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46C6642C2517867300E214C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46A4610025164162003C53E8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4664E4D52507A4C8000590F3 /* Sources */ = {
@@ -121,6 +195,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4664E4DD2507A4C8000590F3 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46C6642A2517867300E214C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C664312517867300E214C4 /* ToyRobotSimulatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +235,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -213,6 +296,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -243,6 +327,7 @@
 		4664E4E12507A4C8000590F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -252,7 +337,42 @@
 		4664E4E22507A4C8000590F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		46C664332517867300E214C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ToyRobotSimulatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RameezHassan.ToyRobotSimulatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		46C664342517867300E214C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ToyRobotSimulatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RameezHassan.ToyRobotSimulatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -275,6 +395,15 @@
 			buildConfigurations = (
 				4664E4E12507A4C8000590F3 /* Debug */,
 				4664E4E22507A4C8000590F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46C664352517867300E214C4 /* Build configuration list for PBXNativeTarget "ToyRobotSimulatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46C664332517867300E214C4 /* Debug */,
+				46C664342517867300E214C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
