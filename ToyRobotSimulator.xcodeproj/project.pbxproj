@@ -9,7 +9,19 @@
 /* Begin PBXBuildFile section */
 		4664E4DD2507A4C8000590F3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664E4DC2507A4C8000590F3 /* main.swift */; };
 		46C664312517867300E214C4 /* ToyRobotSimulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C664302517867300E214C4 /* ToyRobotSimulatorTests.swift */; };
+		46C664392517897E00E214C4 /* RobotDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C664382517897E00E214C4 /* RobotDriver.swift */; };
+		46C6643A2517897E00E214C4 /* RobotDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C664382517897E00E214C4 /* RobotDriver.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46C6644425180C7A00E214C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4664E4D12507A4C8000590F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4664E4D82507A4C8000590F3;
+			remoteInfo = ToyRobotSimulator;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4664E4D72507A4C8000590F3 /* CopyFiles */ = {
@@ -29,6 +41,7 @@
 		46C6642E2517867300E214C4 /* ToyRobotSimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToyRobotSimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46C664302517867300E214C4 /* ToyRobotSimulatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyRobotSimulatorTests.swift; sourceTree = "<group>"; };
 		46C664322517867300E214C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46C664382517897E00E214C4 /* RobotDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotDriver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				4664E4DC2507A4C8000590F3 /* main.swift */,
+				46C664382517897E00E214C4 /* RobotDriver.swift */,
 			);
 			path = ToyRobotSimulator;
 			sourceTree = "<group>";
@@ -112,10 +126,12 @@
 				46C6642A2517867300E214C4 /* Sources */,
 				46C6642B2517867300E214C4 /* Frameworks */,
 				46C6642C2517867300E214C4 /* Resources */,
+				46C6643D25178A2500E214C4 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				46C6644525180C7A00E214C4 /* PBXTargetDependency */,
 			);
 			name = ToyRobotSimulatorTests;
 			productName = ToyRobotSimulatorTests;
@@ -187,6 +203,23 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		46C6643D25178A2500E214C4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -194,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C664392517897E00E214C4 /* RobotDriver.swift in Sources */,
 				4664E4DD2507A4C8000590F3 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,11 +236,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C6643A2517897E00E214C4 /* RobotDriver.swift in Sources */,
 				46C664312517867300E214C4 /* ToyRobotSimulatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46C6644525180C7A00E214C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4664E4D82507A4C8000590F3 /* ToyRobotSimulator */;
+			targetProxy = 46C6644425180C7A00E214C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4664E4DE2507A4C8000590F3 /* Debug */ = {

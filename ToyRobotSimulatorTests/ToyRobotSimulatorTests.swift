@@ -7,7 +7,7 @@
 //
 
 import XCTest
-
+@testable import ToyRobotSimulator
 class ToyRobotSimulatorTests: XCTestCase {
 
     override func setUpWithError() throws {
@@ -21,6 +21,11 @@ class ToyRobotSimulatorTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        var result: Direction = .east
+        result.turnLeft()
+        result.turnLeft()
+        XCTAssert(result == .east)
+
     }
 
     func testPerformanceExample() throws {
