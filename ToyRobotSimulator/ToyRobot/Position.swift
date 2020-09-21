@@ -7,11 +7,11 @@
 //
 
 import Foundation
-// Position Of the Robot on the table
+/// Position Of the Robot on the table
 struct Position {
-    var abscissa = 0 //x-axis
-    var ordinate = 0 //y-axis
-    // Function To Validate The Position Of Robot Toy Based On The Size Of Table
+    var abscissa = 0 ///x-axis
+    var ordinate = 0 ///y-axis
+    /// Function To Validate The Position Of Robot Toy Based On The Size Of Table
     func validateWith(size: (maxAbscissa: Int, maxOrdinate: Int)) -> Bool {
         let absissaRange = 0..<size.maxAbscissa
         let ordinateRange = 0..<size.maxOrdinate

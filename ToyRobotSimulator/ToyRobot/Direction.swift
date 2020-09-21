@@ -7,12 +7,12 @@
 //
 
 import Foundation
-// Facing Direction Of the Robot
+/// Facing Direction Of the Robot
 enum Direction: String {
-    case north = "NORTH", // facing upwards
-         east = "EAST", // facing right
-         south = "SOUTH", // facing downward
-         west = "WEST" // facing left
+    case north = "NORTH", /// facing upwards
+         east = "EAST", /// facing right
+         south = "SOUTH", /// facing downward
+         west = "WEST" /// facing left
 }
 extension Direction {
     mutating func turnLeft() {
