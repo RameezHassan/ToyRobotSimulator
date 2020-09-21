@@ -10,9 +10,9 @@ import Foundation
 class RobotDriver {
 
     /// Representation of table size in (x,y)
-    var tableSize :(maxAbscissa: Int, maxOrdinate: Int) = (5, 5)
+    private var tableSize :(maxAbscissa: Int, maxOrdinate: Int) = (5, 5)
     /// Robot Toy Optional Variable
-    var robot: Robot?
+    private var robot: Robot?
     /// Function To Move Robot Toy In Specific Direction
     func move() {
         /// This Function Will Not Do Any Thing If Robot Toy Is Not Already Placed On The Table
@@ -39,8 +39,8 @@ class RobotDriver {
      
      - Parameters:
        - abscissa: X-axis Position
-       - ordinate:  Y-axis Position
-       - facing:  Direction Toy is facing to
+       - ordinate: Y-axis Position
+       - facing: Direction Toy is facing to
      */
     func place(abscissa: Int, ordinate: Int, facing: Direction ) {
         let robotPosition = Position(abscissa: abscissa, ordinate: ordinate)

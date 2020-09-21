@@ -15,6 +15,7 @@ enum Direction: String {
          west = "WEST" /// facing left
 }
 extension Direction {
+    /// Function to change direction to left
     mutating func turnLeft() {
         switch self {
         case .north:
@@ -27,6 +28,7 @@ extension Direction {
             self = .south
         }
     }
+    /// Function to change direction to right
     mutating func turnRight() {
         switch self {
         case .north:
