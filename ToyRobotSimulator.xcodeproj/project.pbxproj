@@ -17,6 +17,7 @@
 		4660205D2519493800280C05 /* PositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660205C2519493800280C05 /* PositionTests.swift */; };
 		466020612519495600280C05 /* DirectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466020602519495600280C05 /* DirectionTests.swift */; };
 		466020652519498600280C05 /* RobotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466020642519498600280C05 /* RobotTests.swift */; };
+		46602071251961E400280C05 /* RobotCommands.txt in Resources */ = {isa = PBXBuildFile; fileRef = 46602070251961E400280C05 /* RobotCommands.txt */; };
 		4664E4DD2507A4C8000590F3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664E4DC2507A4C8000590F3 /* main.swift */; };
 		46C664312517867300E214C4 /* ToyRobotSimulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C664302517867300E214C4 /* ToyRobotSimulatorTests.swift */; };
 		46C664392517897E00E214C4 /* RobotDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C664382517897E00E214C4 /* RobotDriver.swift */; };
@@ -53,6 +54,7 @@
 		4660205C2519493800280C05 /* PositionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionTests.swift; sourceTree = "<group>"; };
 		466020602519495600280C05 /* DirectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionTests.swift; sourceTree = "<group>"; };
 		466020642519498600280C05 /* RobotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotTests.swift; sourceTree = "<group>"; };
+		46602070251961E400280C05 /* RobotCommands.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = RobotCommands.txt; sourceTree = "<group>"; };
 		4664E4D92507A4C8000590F3 /* ToyRobotSimulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ToyRobotSimulator; sourceTree = BUILT_PRODUCTS_DIR; };
 		4664E4DC2507A4C8000590F3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		46C6642E2517867300E214C4 /* ToyRobotSimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToyRobotSimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +103,14 @@
 			path = ToyRobotTests;
 			sourceTree = "<group>";
 		};
+		4660206F2519616800280C05 /* CommandReader */ = {
+			isa = PBXGroup;
+			children = (
+				46602070251961E400280C05 /* RobotCommands.txt */,
+			);
+			path = CommandReader;
+			sourceTree = "<group>";
+		};
 		4664E4D02507A4C8000590F3 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				4664E4DC2507A4C8000590F3 /* main.swift */,
+				4660206F2519616800280C05 /* CommandReader */,
 				466020442518D8E400280C05 /* ToyRobot */,
 			);
 			path = ToyRobotSimulator;
@@ -220,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46602071251961E400280C05 /* RobotCommands.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
