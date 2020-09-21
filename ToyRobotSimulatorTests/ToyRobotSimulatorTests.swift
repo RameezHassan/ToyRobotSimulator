@@ -21,10 +21,16 @@ class ToyRobotSimulatorTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        var result: Direction = .east
-        result.turnLeft()
-        result.turnLeft()
-        XCTAssert(result == .east)
+        let robotToy = RobotDriver()
+        robotToy.place(abscissa: 2, ordinate: 2, facing: .north)
+        robotToy.left()
+        robotToy.move()
+        robotToy.right()
+        robotToy.right()
+        robotToy.right()
+        robotToy.right()
+        robotToy.right()
+        XCTAssert(robotToy.report() == "1,2,NORTH")
 
     }
 

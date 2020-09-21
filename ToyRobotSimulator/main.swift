@@ -8,9 +8,4 @@
 
 import Foundation
 print("Hello, World!")
-var robotToy = RobotDriver()
-robotToy.place(abscissa: 2, ordinate: 2, facing: .north)
-robotToy.left()
-robotToy.move()
-robotToy.right()
-print(robotToy.report())
+
