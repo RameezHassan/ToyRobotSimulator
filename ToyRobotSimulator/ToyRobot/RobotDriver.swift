@@ -7,60 +7,6 @@
 //
 
 import Foundation
-// Facing Direction Of the Robot
-enum Direction: String {
-    case north = "NORTH", // facing upwards
-         east = "EAST", // facing right
-         south = "SOUTH", // facing downward
-         west = "WEST" // facing left
-}
-extension Direction {
-    mutating func turnLeft() {
-        switch self {
-        case .north:
-            self = .west
-        case .south:
-            self = .east
-        case .east:
-            self = .north
-        case .west:
-            self = .south
-        }
-    }
-    mutating func turnRight() {
-        switch self {
-        case .north:
-            self = .east
-        case .south:
-            self = .west
-        case .east:
-            self = .south
-        case .west:
-            self = .north
-        }
-    }
-}
-struct Position {
-    var abscissa = 0 //x-axis
-    var ordinate = 0 //y-axis
-    // Function To Validate The Position Of Robot Toy Based On The Size Of Table
-    func validateWith(size: (maxAbscissa: Int, maxOrdinate: Int)) -> Bool {
-        let absissaRange = 0..<size.maxAbscissa
-        let ordinateRange = 0..<size.maxOrdinate
-        if absissaRange.contains(abscissa) && ordinateRange.contains(ordinate) {
-            return true
-        } else {
-            return false
-        }
-    }
-}
-struct Robot {
-    var postion: Position // The default position of robot is (0,0) -> (x-axis,y-axis)
-    var direction: Direction = .north // The default direction of robot is facing upward(north)
-    var description: String {
-        return String(postion.abscissa) + "," + String(postion.ordinate) + "," + direction.rawValue
-    }
-}
 class RobotDriver {
 
     // Setting the size of table

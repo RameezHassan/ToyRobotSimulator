@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4660204A2518D90500280C05 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466020492518D90500280C05 /* Direction.swift */; };
+		4660204B2518D90500280C05 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466020492518D90500280C05 /* Direction.swift */; };
+		4660204F2518D93D00280C05 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660204E2518D93D00280C05 /* Position.swift */; };
+		466020502518D93D00280C05 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660204E2518D93D00280C05 /* Position.swift */; };
+		466020542518D9A600280C05 /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466020532518D9A600280C05 /* Robot.swift */; };
+		466020552518D9A600280C05 /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466020532518D9A600280C05 /* Robot.swift */; };
 		4664E4DD2507A4C8000590F3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664E4DC2507A4C8000590F3 /* main.swift */; };
 		46C664312517867300E214C4 /* ToyRobotSimulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C664302517867300E214C4 /* ToyRobotSimulatorTests.swift */; };
 		46C664392517897E00E214C4 /* RobotDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C664382517897E00E214C4 /* RobotDriver.swift */; };
@@ -36,6 +42,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		466020492518D90500280C05 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		4660204E2518D93D00280C05 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		466020532518D9A600280C05 /* Robot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Robot.swift; sourceTree = "<group>"; };
 		4664E4D92507A4C8000590F3 /* ToyRobotSimulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ToyRobotSimulator; sourceTree = BUILT_PRODUCTS_DIR; };
 		4664E4DC2507A4C8000590F3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		46C6642E2517867300E214C4 /* ToyRobotSimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToyRobotSimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +71,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		466020442518D8E400280C05 /* ToyRobot */ = {
+			isa = PBXGroup;
+			children = (
+				46C664382517897E00E214C4 /* RobotDriver.swift */,
+				466020532518D9A600280C05 /* Robot.swift */,
+				4660204E2518D93D00280C05 /* Position.swift */,
+				466020492518D90500280C05 /* Direction.swift */,
+			);
+			path = ToyRobot;
+			sourceTree = "<group>";
+		};
 		4664E4D02507A4C8000590F3 = {
 			isa = PBXGroup;
 			children = (
@@ -84,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				4664E4DC2507A4C8000590F3 /* main.swift */,
-				46C664382517897E00E214C4 /* RobotDriver.swift */,
+				466020442518D8E400280C05 /* ToyRobot */,
 			);
 			path = ToyRobotSimulator;
 			sourceTree = "<group>";
@@ -227,8 +247,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				466020542518D9A600280C05 /* Robot.swift in Sources */,
 				46C664392517897E00E214C4 /* RobotDriver.swift in Sources */,
 				4664E4DD2507A4C8000590F3 /* main.swift in Sources */,
+				4660204F2518D93D00280C05 /* Position.swift in Sources */,
+				4660204A2518D90500280C05 /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,8 +259,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				466020552518D9A600280C05 /* Robot.swift in Sources */,
 				46C6643A2517897E00E214C4 /* RobotDriver.swift in Sources */,
 				46C664312517867300E214C4 /* ToyRobotSimulatorTests.swift in Sources */,
+				466020502518D93D00280C05 /* Position.swift in Sources */,
+				4660204B2518D90500280C05 /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
