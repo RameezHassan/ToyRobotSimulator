@@ -8,6 +8,7 @@
 
 import Foundation
 extension String {
+    /// This Function retrieves the components of 
     func componentsOfPlaceCommand() -> (Position, Direction)? {
         let placeCommand = "PLACE"
         guard self.hasPrefix(placeCommand) else { return nil }

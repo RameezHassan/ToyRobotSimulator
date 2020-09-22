@@ -9,8 +9,10 @@
 import Foundation
 /// This function will display the welcome message in console and read input commands from the console
 struct RobotCommandReader {
+    // RobotDriver Object Constant
     let robotToy = RobotDriver()
-    func startRedingCommands() {
+    /// This function will start the command reading process in console
+    func startReadingCommands() {
         print("""
               **** Welcome To Toy Robot Simulator ****
 
@@ -38,6 +40,7 @@ struct RobotCommandReader {
         }
         print("**** Thanks For Using Toy Robot Simulator ****")
     }
+    /// This function will execute commands in reader
     func executeCommand(command: String) -> String? {
         switch command {
         case "MOVE":

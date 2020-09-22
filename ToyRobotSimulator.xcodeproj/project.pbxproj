@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		46148055251A52E40088D234 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46148054251A52E40088D234 /* String+Extension.swift */; };
+		46148058251AAEC90088D234 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46148054251A52E40088D234 /* String+Extension.swift */; };
+		4614805E251AB0550088D234 /* String+ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4614805D251AB0550088D234 /* String+ExtensionTests.swift */; };
+		46148068251AB8F50088D234 /* RobotCommandReaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46148067251AB8F50088D234 /* RobotCommandReaderTest.swift */; };
 		4660204A2518D90500280C05 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466020492518D90500280C05 /* Direction.swift */; };
 		4660204B2518D90500280C05 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466020492518D90500280C05 /* Direction.swift */; };
 		4660204F2518D93D00280C05 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660204E2518D93D00280C05 /* Position.swift */; };
@@ -50,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		46148054251A52E40088D234 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		4614805D251AB0550088D234 /* String+ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ExtensionTests.swift"; sourceTree = "<group>"; };
+		46148067251AB8F50088D234 /* RobotCommandReaderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotCommandReaderTest.swift; sourceTree = "<group>"; };
 		466020492518D90500280C05 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		4660204E2518D93D00280C05 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		466020532518D9A600280C05 /* Robot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Robot.swift; sourceTree = "<group>"; };
@@ -90,6 +95,22 @@
 				46148054251A52E40088D234 /* String+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4614805B251AB00C0088D234 /* RobotCommandReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				46148067251AB8F50088D234 /* RobotCommandReaderTest.swift */,
+			);
+			path = RobotCommandReaderTests;
+			sourceTree = "<group>";
+		};
+		4614805C251AB0240088D234 /* ExtenstionsTests */ = {
+			isa = PBXGroup;
+			children = (
+				4614805D251AB0550088D234 /* String+ExtensionTests.swift */,
+			);
+			path = ExtenstionsTests;
 			sourceTree = "<group>";
 		};
 		466020442518D8E400280C05 /* ToyRobot */ = {
@@ -156,6 +177,8 @@
 			children = (
 				46C664322517867300E214C4 /* Info.plist */,
 				46C664302517867300E214C4 /* ToyRobotSimulatorTests.swift */,
+				4614805C251AB0240088D234 /* ExtenstionsTests */,
+				4614805B251AB00C0088D234 /* RobotCommandReaderTests */,
 				4660206A251956FB00280C05 /* ToyRobotTests */,
 			);
 			path = ToyRobotSimulatorTests;
@@ -305,12 +328,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				466020552518D9A600280C05 /* Robot.swift in Sources */,
+				46148058251AAEC90088D234 /* String+Extension.swift in Sources */,
 				4660205D2519493800280C05 /* PositionTests.swift in Sources */,
+				46148068251AB8F50088D234 /* RobotCommandReaderTest.swift in Sources */,
 				46C6643A2517897E00E214C4 /* RobotDriver.swift in Sources */,
 				466020612519495600280C05 /* DirectionTests.swift in Sources */,
 				46C664312517867300E214C4 /* ToyRobotSimulatorTests.swift in Sources */,
 				466020502518D93D00280C05 /* Position.swift in Sources */,
 				46602078251964CC00280C05 /* RobotCommandReader.swift in Sources */,
+				4614805E251AB0550088D234 /* String+ExtensionTests.swift in Sources */,
 				466020592519490500280C05 /* RobotDriverTests.swift in Sources */,
 				466020652519498600280C05 /* RobotTests.swift in Sources */,
 				4660204B2518D90500280C05 /* Direction.swift in Sources */,

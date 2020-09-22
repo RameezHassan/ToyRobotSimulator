@@ -7,4 +7,5 @@
 //
 
 import Foundation
-RobotCommandReader().startRedingCommands()
+// Initiating the console application by start reading commands from console
+RobotCommandReader().startReadingCommands()
