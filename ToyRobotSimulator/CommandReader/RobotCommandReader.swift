@@ -7,7 +7,9 @@
 //
 
 import Foundation
+/// This function will display the welcome message in console and read input commands from the console
 struct RobotCommandReader {
+    let robotToy = RobotDriver()
     func startRedingCommands() {
         print("""
               **** Welcome To Toy Robot Simulator ****
@@ -21,19 +23,39 @@ struct RobotCommandReader {
                      **** RIGHT ****
                      **** REPORT ****
 
-          **** For Quiting Please Enter Quit Command ****
+          **** For Quiting Please Enter Q Command ****
 
 
 """)
         var command = ""
-        while command != "Quit" {
-            if let name = readLine() {
-                command = name
-                if name.uppercased() == "REPORT" {
-                    print(name)
+        while command != "Q" {
+            if let input = readLine() {
+                command = input.uppercased()
+                if let result = executeCommand(command: command) {
+                    print(result)
                 }
             }
         }
         print("**** Thanks For Using Toy Robot Simulator ****")
+    }
+    func executeCommand(command: String) -> String? {
+        switch command {
+        case "MOVE":
+        robotToy.move()
+        case "REPORT":
+        return robotToy.report()
+        case "LEFT":
+        robotToy.left()
+        case "RIGHT":
+        robotToy.right()
+        case let place where place.componentsOfPlaceCommand() != nil:guard let components:
+                (position: Position,
+                 direction: Direction) = place.componentsOfPlaceCommand() else { return nil }
+            robotToy.place(abscissa: components.position.abscissa, ordinate: components.position.ordinate,
+                           facing: components.direction)
+        default:
+        return nil
+        }
+        return nil
     }
 }
