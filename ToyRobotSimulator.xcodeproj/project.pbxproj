@@ -17,10 +17,8 @@
 		4660205D2519493800280C05 /* PositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4660205C2519493800280C05 /* PositionTests.swift */; };
 		466020612519495600280C05 /* DirectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466020602519495600280C05 /* DirectionTests.swift */; };
 		466020652519498600280C05 /* RobotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466020642519498600280C05 /* RobotTests.swift */; };
-		46602071251961E400280C05 /* RobotCommands.txt in Resources */ = {isa = PBXBuildFile; fileRef = 46602070251961E400280C05 /* RobotCommands.txt */; };
-		46602077251964CC00280C05 /* CommandReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46602076251964CC00280C05 /* CommandReader.swift */; };
-		46602078251964CC00280C05 /* CommandReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46602076251964CC00280C05 /* CommandReader.swift */; };
-		4660207C2519652B00280C05 /* RobotReports.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4660207B2519652B00280C05 /* RobotReports.txt */; };
+		46602077251964CC00280C05 /* RobotCommandReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46602076251964CC00280C05 /* RobotCommandReader.swift */; };
+		46602078251964CC00280C05 /* RobotCommandReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46602076251964CC00280C05 /* RobotCommandReader.swift */; };
 		4664E4DD2507A4C8000590F3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664E4DC2507A4C8000590F3 /* main.swift */; };
 		46C664312517867300E214C4 /* ToyRobotSimulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C664302517867300E214C4 /* ToyRobotSimulatorTests.swift */; };
 		46C664392517897E00E214C4 /* RobotDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C664382517897E00E214C4 /* RobotDriver.swift */; };
@@ -57,9 +55,7 @@
 		4660205C2519493800280C05 /* PositionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionTests.swift; sourceTree = "<group>"; };
 		466020602519495600280C05 /* DirectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionTests.swift; sourceTree = "<group>"; };
 		466020642519498600280C05 /* RobotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotTests.swift; sourceTree = "<group>"; };
-		46602070251961E400280C05 /* RobotCommands.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = RobotCommands.txt; sourceTree = "<group>"; };
-		46602076251964CC00280C05 /* CommandReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandReader.swift; sourceTree = "<group>"; };
-		4660207B2519652B00280C05 /* RobotReports.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = RobotReports.txt; sourceTree = "<group>"; };
+		46602076251964CC00280C05 /* RobotCommandReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotCommandReader.swift; sourceTree = "<group>"; };
 		4664E4D92507A4C8000590F3 /* ToyRobotSimulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ToyRobotSimulator; sourceTree = BUILT_PRODUCTS_DIR; };
 		4664E4DC2507A4C8000590F3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		46C6642E2517867300E214C4 /* ToyRobotSimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToyRobotSimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,9 +107,7 @@
 		4660206F2519616800280C05 /* CommandReader */ = {
 			isa = PBXGroup;
 			children = (
-				46602070251961E400280C05 /* RobotCommands.txt */,
-				4660207B2519652B00280C05 /* RobotReports.txt */,
-				46602076251964CC00280C05 /* CommandReader.swift */,
+				46602076251964CC00280C05 /* RobotCommandReader.swift */,
 			);
 			path = CommandReader;
 			sourceTree = "<group>";
@@ -238,8 +232,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46602071251961E400280C05 /* RobotCommands.txt in Resources */,
-				4660207C2519652B00280C05 /* RobotReports.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +281,7 @@
 			files = (
 				466020542518D9A600280C05 /* Robot.swift in Sources */,
 				46C664392517897E00E214C4 /* RobotDriver.swift in Sources */,
-				46602077251964CC00280C05 /* CommandReader.swift in Sources */,
+				46602077251964CC00280C05 /* RobotCommandReader.swift in Sources */,
 				4664E4DD2507A4C8000590F3 /* main.swift in Sources */,
 				4660204F2518D93D00280C05 /* Position.swift in Sources */,
 				4660204A2518D90500280C05 /* Direction.swift in Sources */,
@@ -306,7 +298,7 @@
 				466020612519495600280C05 /* DirectionTests.swift in Sources */,
 				46C664312517867300E214C4 /* ToyRobotSimulatorTests.swift in Sources */,
 				466020502518D93D00280C05 /* Position.swift in Sources */,
-				46602078251964CC00280C05 /* CommandReader.swift in Sources */,
+				46602078251964CC00280C05 /* RobotCommandReader.swift in Sources */,
 				466020592519490500280C05 /* RobotDriverTests.swift in Sources */,
 				466020652519498600280C05 /* RobotTests.swift in Sources */,
 				4660204B2518D90500280C05 /* Direction.swift in Sources */,
