@@ -2,7 +2,7 @@ Toy Robot Simulator
 ===================
 Application Requirement
 -----------------------
-The requirements for thecoding task are listeed [here](ToyRobotSimulator/ToyRobotSimulator/ToyRobotSimulatorProblem/README.md)
+The requirements for thecoding task are listeed [here](https://github.com/RameezHassan/ToyRobotSimulator/blob/master/ToyRobotSimulator/ToyRobotSimulatorProblem/README.md)
 
 Solution
 --------
