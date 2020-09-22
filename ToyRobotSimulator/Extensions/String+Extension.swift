@@ -9,9 +9,10 @@
 import Foundation
 extension String {
     func componentsOfPlaceCommand() -> (Position, Direction)? {
-        let placeCommand = "PLACE "
+        let placeCommand = "PLACE"
         guard self.hasPrefix(placeCommand) else { return nil }
-        let commandString = String(self.dropFirst(placeCommand.count))
+        var commandString = String(self.dropFirst(placeCommand.count))
+        commandString = commandString.trimmingCharacters(in: .whitespaces)
         let components = commandString.components(separatedBy: ",")
         if components.count == 3 {
             guard let abscissa = Int(components[0]) else { return nil }

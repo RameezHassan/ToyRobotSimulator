@@ -30,7 +30,7 @@ struct RobotCommandReader {
         var command = ""
         while command != "Q" {
             if let input = readLine() {
-                command = input.uppercased()
+                command = input.uppercased().trimmingCharacters(in: .whitespaces)
                 if let result = executeCommand(command: command) {
                     print(result)
                 }
