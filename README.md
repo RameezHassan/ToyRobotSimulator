@@ -19,9 +19,7 @@ Here's an image of a console application:
 
 - Commands can be of any case
 - Spaces before and after the commands would not impact its validity
-- Both of these place commands below are valid and will execute the same operation
- 1. **PLACE 2,2,NORTH**
- 2. **place2,2,north**
+- Both of these place commands `PLACE 2,2,NORTH` and `place2,2,north` are valid and will execute the same operation.
  
 Sample Data For Testing
 -----------------------
