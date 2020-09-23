@@ -17,7 +17,7 @@ struct RobotCommandReader {
               **** Welcome To Toy Robot Simulator ****
 
          **** Please Enter Your Commands For Toy Robot ****
-             **** Please Use Following The Comands ****
+             **** Please Use Following The Commands ****
          **** Please Enter Your Commands For Toy Robot ****
                      **** PLACE X,Y,F ****
                      **** MOVE ****

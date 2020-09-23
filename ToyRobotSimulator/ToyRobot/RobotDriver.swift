@@ -16,7 +16,7 @@ class RobotDriver {
     /// Function To Move Robot Toy In Specific Direction
     func move() {
         /// This Function Will Not Do Any Thing If Robot Toy Is Not Already Placed On The Table
-        guard (robot != nil), let position = robot?.postion, let direction = robot?.direction else {
+        guard (robot != nil), let position = robot?.position, let direction = robot?.direction else {
             return
         }
         var newPosition: Position
@@ -32,7 +32,7 @@ class RobotDriver {
             newPosition = Position(abscissa: position.abscissa - 1, ordinate: position.ordinate)
         }
         /// Validating The New Position And Assigning It To Robot Toy
-        robot?.postion = newPosition.validateWith(size: tableSize) ? newPosition : position
+        robot?.position = newPosition.validateWith(size: tableSize) ? newPosition : position
     }
     /**
      Function To Place Robot On The Table In A Specific Direction.
@@ -49,7 +49,7 @@ class RobotDriver {
             return
         }
         /// Setting Robot
-        robot = Robot(postion: robotPosition, direction: facing)
+        robot = Robot(position: robotPosition, direction: facing)
     }
     /// Function To Report The Location And Direction Of Report
     func report() -> String {

@@ -19,13 +19,13 @@ class PositionTests: XCTestCase {
     }
 
     func testValidatePositionFuncPassCase() throws {
-        let postion = Position(abscissa: 6, ordinate: 9)
+        let position = Position(abscissa: 6, ordinate: 9)
         let sizeOfTable = (10, 10)
-        XCTAssert(postion.validateWith(size: sizeOfTable), "Position is with in the Table")
+        XCTAssert(position.validateWith(size: sizeOfTable), "Position is with in the Table")
     }
     func testValidatePositionFuncFailCase() throws {
-        let postion = Position(abscissa: 6, ordinate: 9)
+        let position = Position(abscissa: 6, ordinate: 9)
         let sizeOfTable = (5, 5)
-        XCTAssert(!postion.validateWith(size: sizeOfTable), "Position is outside the Table")
+        XCTAssert(!position.validateWith(size: sizeOfTable), "Position is outside the Table")
     }
 }

@@ -29,19 +29,19 @@ class StringExtensionTests: XCTestCase {
         XCTAssert(result == nil, "Result should be nil")
 
     }
-    func testComponentsOfPlaceCommandWhenFirstCompanentInformationIsWrong() throws {
+    func testComponentsOfPlaceCommandWhenFirstComponentInformationIsWrong() throws {
         let command = "PLACE 2A,3,NORTH"
         let result = command.componentsOfPlaceCommand()
         XCTAssert(result == nil, "Result should be nil")
 
     }
-    func testComponentsOfPlaceCommandWhenSecondCompanentInformationIsWrong() throws {
+    func testComponentsOfPlaceCommandWhenSecondComponentInformationIsWrong() throws {
         let command = "PLACE 2,3A,NORTH"
         let result = command.componentsOfPlaceCommand()
         XCTAssert(result == nil, "Result should be nil")
 
     }
-    func testComponentsOfPlaceCommandWhenThirdCompanentInformationIsWrong() throws {
+    func testComponentsOfPlaceCommandWhenThirdComponentInformationIsWrong() throws {
         let command = "PLACE 2A,3,WrongDirection"
         let result = command.componentsOfPlaceCommand()
         XCTAssert(result == nil, "Result should be nil")

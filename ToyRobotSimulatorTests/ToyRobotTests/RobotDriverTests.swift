@@ -44,7 +44,7 @@ class RobotDriverTests: XCTestCase {
         robotToy.move() // 0,3,NORTH
         XCTAssert(robotToy.report() == "0,3,NORTH", "Report should be 0,3,NORTH")
     }
-    func testRebortDriverWhenPlacedOutsideTheTable() throws {
+    func testRebotDriverWhenPlacedOutsideTheTable() throws {
         let robotToy = RobotDriver()
         robotToy.place(abscissa: 20, ordinate: 20, facing: .north) // This is outside Table (5,5)
         robotToy.move() // Will Do Nothing Since Toy is not placed inside

@@ -9,9 +9,9 @@
 import Foundation
 /// Robot Structure
 struct Robot {
-    var postion: Position
+    var position: Position
     var direction: Direction
     var description: String {
-        return String(postion.abscissa) + "," + String(postion.ordinate) + "," + direction.rawValue
+        return String(position.abscissa) + "," + String(position.ordinate) + "," + direction.rawValue
     }
 }

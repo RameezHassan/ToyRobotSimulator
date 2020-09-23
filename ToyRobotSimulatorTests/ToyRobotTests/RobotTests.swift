@@ -18,9 +18,9 @@ class RobotTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     func testRobotDescriptionFunc() throws {
-        let postion = Position(abscissa: 3, ordinate: 4)
+        let position = Position(abscissa: 3, ordinate: 4)
         let direction: Direction = .east
-        let robot = Robot(postion: postion, direction: direction)
+        let robot = Robot(position: position, direction: direction)
         XCTAssert(robot.description == "3,4,EAST", "Description Of Robot is (3,4) facing East")
     }
 }
